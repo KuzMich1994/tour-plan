@@ -14,6 +14,8 @@
       &__link
         font-size: 12px
         line-height: 15px
+  .logo
+    width: 132px
   .search
     &__input
       width: 340px
@@ -21,4 +23,24 @@
   .container
     max-width: 576px
     width: 92%
-  
+  .navbar
+    &__search, &__user, &-bottom
+      display: none
+  .menu
+    &-button
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 16px
+      height: 12px
+      padding: 0
+      border: none
+      background-color: $light
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text
+@media (max-width: 576px)
+  .logo
+    width: 99px
