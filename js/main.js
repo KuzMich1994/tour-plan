@@ -8,4 +8,9 @@ var mySwiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button_next',
     prevEl: '.slider-button_prev',
   },
+  keyboard: {
+    enabled: true,
+    onlyInVievport: false,
+    pageUpDown: true,
+  },
 })
