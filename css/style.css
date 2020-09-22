@@ -819,7 +819,8 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  background-color: #000000;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
