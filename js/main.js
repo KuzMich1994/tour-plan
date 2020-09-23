@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.hotel-slider', {
+var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -14,4 +14,20 @@ var mySwiper = new Swiper('.hotel-slider', {
     pageUpDown: true,
   },
   effect: 'cube',
+})
+var reviewsSlider = new Swiper('.reviews-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button_next',
+    prevEl: '.reviews-slider__button_prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInVievport: false,
+    pageUpDown: true,
+  },
 })
