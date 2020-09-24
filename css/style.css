@@ -965,8 +965,8 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 70px;
+  margin: 0 auto 70px auto;
+  max-width: 620px;
 }
 
 .reviews-slider__item {
@@ -1154,6 +1154,17 @@ template {
   .newsletter-wrapper {
     max-width: 700px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
+  .reviews-title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 60px;
+  }
+  .reviews-slider__item {
+    max-width: 579px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1264,6 +1275,37 @@ template {
   .subscribe {
     width: 100%;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews-title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 42px;
+    max-width: 300px;
+  }
+  .reviews-slider__item {
+    max-width: 100%;
+    padding: 0 31px 36px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 46px;
+  }
+  .reviews-slider__button_prev {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin-left: -85px;
+  }
+  .reviews-slider__button_next {
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    margin-right: -85px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1296,6 +1338,11 @@ template {
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  .reviews-title {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 245px;
   }
 }
 /*# sourceMappingURL=style.css.map */
