@@ -1214,6 +1214,16 @@ template {
   .hotel-slider {
     height: 350px;
   }
+  .hotel-slider__button_prev {
+    left: 11px;
+    width: 4px;
+    background-size: 7px;
+  }
+  .hotel-slider__button_next {
+    right: 11px;
+    width: 4px;
+    background-size: 7px;
+  }
   .hotel-right {
     height: 450px;
     -webkit-box-orient: vertical;
