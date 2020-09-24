@@ -15,11 +15,6 @@ var hotelSlider = new Swiper(".hotel-slider", {
   },
   effect: "cube",
 });
-$(".parallax-window").parallax({
-  imageSrc: "../img/newsletter-bg.jpg",
-  androidFix: true,
-  iosFix: true,
-});
 var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   direction: "horizontal",
