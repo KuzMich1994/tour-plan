@@ -15,7 +15,7 @@ var hotelSlider = new Swiper(".hotel-slider", {
   },
   effect: "cube",
 });
-$(".newsletter").parallax({
+$(".parallax-window").parallax({
   imageSrc: "../img/newsletter-bg.jpg",
   androidFix: true,
   iosFix: true,
