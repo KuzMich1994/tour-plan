@@ -874,8 +874,8 @@ template {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 54px 50px 199px 1fr 1fr;
-      grid-template-rows: 54px 50px 199px 1fr 1fr;
+  -ms-grid-rows: 59px 51px 199px 1fr 1fr;
+      grid-template-rows: 59px 51px 199px 1fr 1fr;
   padding-right: 21px;
 }
 
@@ -890,7 +890,6 @@ template {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  margin-bottom: 5px;
 }
 
 .packages-card__title {
@@ -914,8 +913,8 @@ template {
 .packages-card__bottom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 120px;
+      grid-template-columns: 1fr 120px;
   -ms-grid-rows: 1fr 40px 30px;
       grid-template-rows: 1fr 40px 30px;
 }
@@ -927,6 +926,11 @@ template {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 0;
 }
 
 .packages-price__last {
@@ -936,9 +940,9 @@ template {
   line-height: 18px;
   text-decoration: line-through;
   color: #ffffff;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .packages-price__new {
@@ -956,7 +960,13 @@ template {
 }
 
 .packages-room__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .packages-room__text:last-child {
@@ -969,7 +979,12 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
-  margin-left: 14px;
+  margin-left: 16px;
+}
+
+.packages-room__icon {
+  width: 14px;
+  height: 14px;
 }
 
 .packages__card_large {
@@ -980,7 +995,7 @@ template {
 
 .offer_large {
   position: absolute;
-  padding: 8px 12px 7px 11px;
+  padding: 8px 22px 7px 11px;
   top: 26px;
   left: 0;
   font-style: normal;
@@ -993,6 +1008,14 @@ template {
   position: absolute;
   left: 0;
   top: 26px;
+}
+
+.stars__item {
+  margin-left: -2px;
+}
+
+.stars__item:first-child {
+  margin-left: -1px;
 }
 
 .newsletter {

@@ -25,14 +25,13 @@
     &__info
       display: grid
       grid-template-columns: 1fr
-      grid-template-rows: 54px 50px 199px 1fr 1fr
+      grid-template-rows: 59px 51px 199px 1fr 1fr
       padding-right: 21px 
     &__img
       object-fit: cover
     &__stars
       justify-self: start
       align-self: end
-      margin-bottom: 5px
     &__title
       margin: 0
       color: $light
@@ -49,11 +48,16 @@
       color: $light
     &__bottom
       display: grid
-      grid-template-columns: 1fr 1fr
+      grid-template-columns: 1fr 120px
       grid-template-rows: 1fr 40px 30px
     &__button
       grid-column: 2 / 3
       grid-row: 2 / 3
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      padding-bottom: 0
   &-price
     &__last
       font-style: normal
@@ -62,7 +66,7 @@
       line-height: 18px
       text-decoration: line-through
       color: $light
-      align-self: center
+      align-self: end
     &__new
       font-style: normal
       font-weight: bold
@@ -73,7 +77,9 @@
       align-self: center
   &-room
     &__text
+      display: flex
       margin-bottom: 11px
+      align-items: center
       &:last-child
         margin-bottom: 0
     &__description
@@ -82,14 +88,17 @@
       font-size: 12px
       line-height: 15px
       color: $light
-      margin-left: 14px
+      margin-left: 16px
+    &__icon
+      width: 14px
+      height: 14px
   &__card
     &_large
       grid-column: 1 / 3
 .offer
   &_large
     position: absolute
-    padding: 8px 12px 7px 11px
+    padding: 8px 22px 7px 11px
     top: 26px
     left: 0
     font-style: normal
@@ -104,4 +113,8 @@
   &__last
     
   &__new
-    
+.stars
+  &__item
+    margin-left: -2px
+    &:first-child
+      margin-left: -1px
