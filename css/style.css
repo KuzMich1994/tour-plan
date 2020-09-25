@@ -874,8 +874,8 @@ template {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 59px 51px 199px 1fr 1fr;
-      grid-template-rows: 59px 51px 199px 1fr 1fr;
+  -ms-grid-rows: 58px 52px 199px 1fr 1fr;
+      grid-template-rows: 58px 52px 199px 1fr 1fr;
   padding-right: 21px;
 }
 
