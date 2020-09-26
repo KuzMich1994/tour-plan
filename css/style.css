@@ -1793,5 +1793,8 @@ template {
     font-size: 24px;
     line-height: 36px;
   }
+  .stars__item {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
