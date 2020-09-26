@@ -1662,18 +1662,17 @@ template {
     line-height: 38px;
   }
   .packages-grid {
-    width: 270px;
-    -ms-grid-columns: (270px)[auto-fill];
-        grid-template-columns: repeat(auto-fill, 270px);
+    -ms-grid-columns: (100%)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 100%);
   }
   .packages-card {
-    -ms-grid-columns: 270px;
-        grid-template-columns: 270px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
     -ms-grid-rows: 250px;
         grid-template-rows: 250px;
   }
   .packages-card__img {
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
   .packages-card__info_large {
