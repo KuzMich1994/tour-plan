@@ -176,7 +176,7 @@
       &__info
         &_large
           grid-template-columns: 32px 1fr
-          grid-template-rows: 35px 30px 240px 1fr 1fr
+          grid-template-rows: 35px 30px minmax(80px, 100%) 101px 110px
       &__stars
         grid-column: 2/3
       &__title
@@ -191,6 +191,7 @@
         grid-column: 2/3
     &-room
       grid-column: 2/3
+      align-self: end
     &__card
       &_large
         grid-column: 1/2

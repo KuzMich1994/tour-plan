@@ -1063,14 +1063,6 @@ template {
   line-height: 10px;
 }
 
-.stars__item {
-  margin-left: -2px;
-}
-
-.stars__item:first-child {
-  margin-left: -1px;
-}
-
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1678,8 +1670,8 @@ template {
   .packages-card__info_large {
     -ms-grid-columns: 32px 1fr;
         grid-template-columns: 32px 1fr;
-    -ms-grid-rows: 35px 30px 240px 1fr 1fr;
-        grid-template-rows: 35px 30px 240px 1fr 1fr;
+    -ms-grid-rows: 35px 30px minmax(80px, 100%) 101px 110px;
+        grid-template-rows: 35px 30px minmax(80px, 100%) 101px 110px;
   }
   .packages-card__stars {
     -ms-grid-column: 2;
@@ -1712,6 +1704,9 @@ template {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
   .packages__card_large {
     -ms-grid-column: 1;
