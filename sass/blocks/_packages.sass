@@ -1,0 +1,156 @@
+.packages
+  padding: 40px 0 70px 0
+  &__title
+    margin-top: 0
+    margin-bottom: 65px
+    text-align: center
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+  &-grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, 350px)
+    grid-template-rows: repeat(auto-fill, 500px)
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+  &-card
+    position: relative
+    display: grid
+    grid-template-columns: 366px 1fr
+    grid-template-rows: 500px
+    grid-column-gap: 44px
+    background: $dark
+    border-radius: 8px
+    overflow: hidden
+    &__info
+      &_large
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 58px 52px 155px 138px 1fr
+        padding-right: 21px
+      &_small
+        display: grid
+        grid-template-columns: 32px 1fr
+        grid-template-rows: 53px 90px 1fr
+        padding-right: 21px
+    &__img
+      object-fit: cover
+    &__stars
+      justify-self: start
+      align-self: end
+    &__title
+      margin: 0
+      color: $light
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      &_small
+        grid-column: 2 / 3
+        align-self: end
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      color: $light
+      overflow-y: hidden
+      text-overflow: clip
+      &:hover
+        overflow-y: auto
+        -webkit-overflow-scrolling: touch
+        -moz-overflow-scrolling: touch
+        -ms-overflow-scrolling: touch
+        -o-overflow-scrolling: touch
+        overflow-scrolling: touch
+      &::-webkit-scrollbar
+        -webkit-appearance: none
+        width: 7px
+      &::-webkit-scrollbar-thumb
+        border-radius: 2px
+        background-color: $light
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,0.5)
+    &__bottom
+      display: grid
+      grid-template-columns: 1fr 120px
+      grid-template-rows: 1fr 40px 30px
+      &_small
+        grid-column: 2 / 3
+        grid-template-rows: 1fr 40px 25px
+    &__button
+      grid-column: 2 / 3
+      grid-row: 2 / 3
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      padding-bottom: 0
+      cursor: pointer
+    &__price
+      &_last
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration: line-through
+        color: $light
+        align-self: end
+      &_new
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+        color: $light
+        grid-row: 2 / 3
+        align-self: center
+  &-room
+    align-self: center
+    &_small
+      grid-column: 2 / 3
+      align-self: end
+    &__text
+      display: flex
+      margin-bottom: 11px
+      align-items: center
+      &:last-child
+        margin-bottom: 0
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      margin-left: 16px
+    &__icon
+      width: 14px
+      height: 14px
+  &__card
+    &_large
+      grid-column: 1 / 3
+    &_small
+      grid-template-columns: 1fr
+      grid-template-rows: 250px 250px
+.offer
+  &_large
+    position: absolute
+    padding: 8px 22px 7px 11px
+    top: 26px
+    left: 0
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    border-radius: 0 4px 4px 0
+  &_small
+    position: absolute
+    left: 0
+    top: 26px
+    padding: 4px 10px
+    border-radius: 0 4px 4px 0
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
