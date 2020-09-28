@@ -30,4 +30,5 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInVievport: false,
     pageUpDown: true,
   },
+  autoHeight: true,
 });
