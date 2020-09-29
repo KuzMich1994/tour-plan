@@ -1974,6 +1974,7 @@ template {
     left: 0;
     right: 0;
     bottom: -100px;
+    overflow-y: scroll;
   }
   .navbar-bottom_visible {
     display: block;
