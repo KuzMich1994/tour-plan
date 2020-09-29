@@ -32,3 +32,11 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
   autoHeight: true,
 });
+
+let menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom_visible");
+  document.querySelector("body").classList.toggle("scroll-hidden");
+});

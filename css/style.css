@@ -25,6 +25,10 @@ img {
   color: #ffffff;
 }
 
+.scroll-hidden {
+  overflow-y: hidden;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -419,6 +423,10 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+}
+
+.navbar-menu__item_mobile_visible {
+  display: none;
 }
 
 .logo {
@@ -1945,12 +1953,72 @@ template {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 78px;
+  }
   .container {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar__user, .navbar-bottom {
+  .navbar_mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar-bottom {
     display: none;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar-bottom_visible {
+    display: block;
+  }
+  .navbar-menu_mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 31px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item:nth-child(1), .navbar-menu__item:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__search_mobile_hidden {
+    display: none;
+  }
+  .navbar__search_mobile_visible {
+    margin-bottom: 39px;
+  }
+  .navbar__user_mobile_hidden {
+    display: none;
+  }
+  .navbar__user_mobile_visible {
+    margin-bottom: 27px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user__name {
+    margin-top: 10px;
+    margin-left: 0;
+    color: #ffffff;
+  }
+  .search__input {
+    max-width: 245px;
   }
   .menu-button {
     display: -webkit-box;
@@ -1969,6 +2037,7 @@ template {
     border: none;
     background-color: #ffffff;
     cursor: pointer;
+    outline: none;
   }
   .menu-button__line {
     width: 16px;

@@ -126,12 +126,61 @@
       &_form
         margin-bottom: 35px
 @media (max-width: 768px)
+  body
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
   .navbar
-    &__search, &__user, &-bottom
+    &_mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &-bottom
       display: none
+      position: fixed
+      top: 75px
+      left: 0
+      right: 0
+      bottom: 0
+      &_visible
+        display: block
+    &-menu
+      &_mobile
+        flex-direction: column
+        padding-top: 31px
+      &__item
+        margin-bottom: 20px
+        &:nth-child(1),
+        &:nth-child(2)
+          margin-bottom: 0
+        &_mobile
+          &_visible
+            display: flex
+    &__search 
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          margin-bottom: 39px
+    &__user
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          margin-bottom: 27px
+          flex-direction: column
+  .user
+    &__name
+      margin-top: 10px
+      margin-left: 0
+      color: $light
+  .search
+    &__input
+      max-width: 245px
   .menu
     &-button
       display: flex
@@ -143,6 +192,7 @@
       border: none
       background-color: $light
       cursor: pointer
+      outline: none
       &__line
         width: 16px
         height: 1px
