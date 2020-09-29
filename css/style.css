@@ -1973,7 +1973,7 @@ template {
     top: 75px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -100px;
   }
   .navbar-bottom_visible {
     display: block;
