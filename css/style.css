@@ -1970,7 +1970,7 @@ template {
   .navbar-bottom {
     display: none;
     position: fixed;
-    top: 75px;
+    top: 72px;
     left: 0;
     right: 0;
     bottom: -100px;
