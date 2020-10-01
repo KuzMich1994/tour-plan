@@ -35,15 +35,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'drummer19940310@mail.ru'; // Логин на почте
-    $mail->Password   = 'arejay50607011'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'drummer19940310@gmail.com'; // Логин на почте
+    $mail->Password   = 'lzzyhale50607011'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('drummer19940310@mail.ru', 'Сергей Кузьмичев'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('drummer19940310@gmail.com', 'Сергей Кузьмичев'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('drumer19940310@mail.ru');  
+    $mail->addAddress('drumer19940310@yandex.ru');  
 
     // Отправка сообщения
     $mail->isHTML(true);
