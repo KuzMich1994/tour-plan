@@ -705,23 +705,20 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   background-color: #EC1F46;
   border-radius: 4px;
 }
 
 .rating__text {
+  max-width: 60px;
   font-size: 8px;
   line-height: 10px;
   color: #ffffff;
 }
 
 .rating__count {
+  max-width: 60px;
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
