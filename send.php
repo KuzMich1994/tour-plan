@@ -37,13 +37,13 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'sergey.student1994@mail.ru'; // Логин на почте
-    $mail->Password   = 'lzzyhale50607011'; // Пароль на почте
+    $mail->Password   = 'Lzzyhale50607011'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('sergey.student1994@mail.ru', 'Сергей Кузьмичев'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('drumer19940310@mail.ru');  
+    $mail->addAddress('drumer19940310@mail.ru');
 
     // Отправка сообщения
     $mail->isHTML(true);
