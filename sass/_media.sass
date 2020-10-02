@@ -125,6 +125,9 @@
         margin-bottom: 25px
       &_form
         margin-bottom: 35px
+  .modal
+    &__dialog
+      padding: 33px 60px
 @media (max-width: 768px)
   body
     padding-top: 78px
@@ -378,6 +381,23 @@
     &__title
       &_details
         width: 190px
+  .modal
+    &__dialog
+      width: 350px
+      padding: 25px 50px
+    &__input
+      padding: 18px 13px
+    &__message
+      padding: 18px 13px
+    &__button
+      flex-basis: 100%
+      margin-bottom: 15px
+      &-group
+        flex-wrap: wrap
+    &__info
+      flex-basis: 100%
+      text-align: center
+
 @media (max-width: 576px)
   .navbar
     &-top
@@ -459,3 +479,19 @@
         margin-top: 10px
       &_form
         margin-top: 30px
+  .modal
+    &__dialog
+      width: 294px
+      padding: 20px 40px
+    &__close
+      width: 12px
+      height: 12px
+    &__title
+      font-size: 16px
+      line-height: 23px
+    &__input
+      font-size: 10px
+      line-height: 15px
+    &__message
+      font-size: 10px
+      line-height: 15px
