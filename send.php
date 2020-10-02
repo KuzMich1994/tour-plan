@@ -44,6 +44,7 @@ try {
 
     // Получатель письма
     $mail->addAddress('drumer19940310@mail.ru');
+    $mail->addAddress('$_POST');
 
     // Отправка сообщения
     $mail->isHTML(true);
