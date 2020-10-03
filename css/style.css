@@ -470,6 +470,7 @@ template {
   background-color: #F5FAFE;
   border: none;
   color: #333333;
+  outline: none;
 }
 
 .search__button {
@@ -1304,7 +1305,7 @@ template {
   height: 47px;
   background: url(../img/quote-right.svg);
   background-repeat: no-repeat;
-  top: 136px;
+  top: 118px;
   right: 62px;
 }
 
@@ -1320,7 +1321,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .reviews-slider__avatar {
@@ -1329,7 +1330,7 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .reviews-slider__username {
@@ -1348,7 +1349,6 @@ template {
   font-size: 10px;
   line-height: 13px;
   color: #000000;
-  margin-bottom: 4px;
 }
 
 .reviews-slider__text {
@@ -1357,6 +1357,7 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  margin: 0;
 }
 
 .reviews-slider__button {
@@ -1916,14 +1917,19 @@ template {
     padding: 30px 0;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 49px;
   }
   .navbar-menu {
     padding: 22px 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .user__name {
+    margin-top: 5px;
   }
   .logo {
     width: 132px;
@@ -1962,12 +1968,14 @@ template {
     max-width: 700px;
   }
   .reviews {
+    padding-top: 30px;
     padding-bottom: 60px;
   }
   .reviews-title {
     font-size: 30px;
     line-height: 38px;
-    margin-bottom: 60px;
+    margin-top: 11px;
+    margin-bottom: 49px;
   }
   .reviews-slider__item {
     max-width: 579px;
@@ -2504,8 +2512,19 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 280px;
+    width: 92%;
+  }
   .navbar-top {
-    padding: 28px 0;
+    padding-top: 23px;
+    padding-bottom: 28px;
+  }
+  .navbar-top__menu-button {
+    margin-top: 5px;
+  }
+  .breadcrumb-list {
+    padding: 12px 0;
   }
   .logo {
     width: 99px;
@@ -2514,11 +2533,33 @@ template {
     padding-top: 5px;
     padding-bottom: 40px;
   }
+  .hotel-info {
+    padding-bottom: 36px;
+  }
   .hotel-info__description {
     max-width: 235px;
   }
+  .hotel-info__offer {
+    margin-bottom: 8px;
+  }
   .hotel-slider {
-    height: 250px;
+    height: 179px;
+  }
+  .booking {
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  .booking__start {
+    margin-top: 2px;
+  }
+  .booking__pricetag {
+    line-height: 31px;
+  }
+  .booking__room {
+    margin-top: 7px;
+  }
+  .map {
+    margin-bottom: 2px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
