@@ -677,6 +677,17 @@ template {
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
 }
 
+.hotel__button {
+  padding: 18px 65px 17px 66px;
+  margin-top: 30px;
+  max-width: 160px;
+  min-height: 50px;
+}
+
+.hotel__button-link {
+  text-decoration: none;
+}
+
 .swiper-container {
   margin: 0;
 }
