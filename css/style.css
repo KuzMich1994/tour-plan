@@ -1036,7 +1036,6 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  padding-bottom: 0;
   cursor: pointer;
 }
 
@@ -2021,7 +2020,7 @@ template {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    width: 110px;
+    width: 95px;
     height: 110px;
   }
   .footer__categories {
@@ -2029,7 +2028,7 @@ template {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    padding-left: 7px;
+    padding-left: 0;
   }
   .footer__additional {
     grid-column: span 4;
@@ -2039,7 +2038,7 @@ template {
     -ms-grid-column-align: center;
         justify-self: center;
     padding-left: 0;
-    padding-right: 14px;
+    padding-right: 20px;
   }
   .footer__social-network {
     grid-column: span 4;
@@ -2052,21 +2051,22 @@ template {
         -ms-grid-row-align: center;
         align-self: center;
     margin-top: 32px;
-    padding-left: 5px;
+    padding-left: 0;
   }
   .footer__legal {
     grid-column: span 2;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    padding-right: 12px;
   }
   .footer__contact-details {
     grid-column: span 6;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
-    margin-top: 8px;
-    padding-left: 7px;
+    margin-top: 12px;
+    padding-left: 0;
   }
   .footer__contact-form {
     grid-column: span 7;
@@ -2074,7 +2074,7 @@ template {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
     margin-top: -7px;
-    padding-left: 5px;
+    padding-left: 0;
   }
   .footer__form {
     -webkit-box-pack: start;
