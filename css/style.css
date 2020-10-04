@@ -1812,6 +1812,8 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
   visibility: hidden;
 }
 
@@ -2744,6 +2746,15 @@ template {
   .modal__message {
     font-size: 10px;
     line-height: 15px;
+  }
+}
+
+@media (max-height: 320px) {
+  .modal__dialog {
+    position: relative;
+    top: 85%;
+    width: 294px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
