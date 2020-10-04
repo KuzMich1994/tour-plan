@@ -78,13 +78,13 @@ $(document).ready(function () {
   let closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
-  closeModalButton.on("keyup", closeModal);
 
   function openModal() {
     let modalOverlay = $(".modal__overlay");
     let modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
+    $('body').addClass("scroll-hidden")
   }
   function closeModal(event) {
     event.preventDefault();
@@ -92,5 +92,6 @@ $(document).ready(function () {
     let modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
+    $('body').removeClass("scroll-hidden")
   }
 });
