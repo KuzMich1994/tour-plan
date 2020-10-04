@@ -1629,25 +1629,25 @@ template {
 
 .footer__input::-webkit-input-placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
 .footer__input:-ms-input-placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
 .footer__input::-ms-input-placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
 .footer__input::placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
@@ -1670,25 +1670,25 @@ template {
 
 .footer__message::-webkit-input-placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
 .footer__message:-ms-input-placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
 .footer__message::-ms-input-placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
 .footer__message::placeholder {
   color: #BDBDBD;
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 12px;
 }
 
