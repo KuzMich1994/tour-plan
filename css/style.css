@@ -482,6 +482,7 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+  outline: none;
 }
 
 .user {
@@ -1037,6 +1038,7 @@ template {
   font-size: 14px;
   line-height: 19px;
   cursor: pointer;
+  outline: none;
 }
 
 .packages-card__price_last {
@@ -1372,7 +1374,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 46%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 2;
@@ -1385,7 +1387,7 @@ template {
 }
 
 .reviews-slider__button_next {
-  right: 0;
+  right: 18px;
   background: url(../img/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1393,7 +1395,7 @@ template {
 }
 
 .reviews-slider__button_prev {
-  left: 0;
+  left: 18px;
   background: url(../img/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1473,7 +1475,7 @@ template {
   line-height: 20px;
   color: #ffffff;
   margin-bottom: 18px;
-  max-width: 160px;
+  max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1485,6 +1487,7 @@ template {
   font-size: 12px;
   line-height: 16px;
   cursor: pointer;
+  outline: none;
 }
 
 .footer {
@@ -1583,6 +1586,10 @@ template {
       -ms-flex-align: start;
           align-items: start;
   margin-bottom: 18px;
+}
+
+.footer__contact-text {
+  margin: 0;
 }
 
 .footer__contact-form {
@@ -1967,6 +1974,17 @@ template {
   }
   .booking {
     width: 340px;
+    padding-left: 23px;
+    padding-right: 22px;
+  }
+  .booking__info {
+    margin-bottom: 5px;
+  }
+  .booking__pricetag {
+    line-height: 30px;
+  }
+  .booking__call-center {
+    margin-bottom: 20px;
   }
   .map {
     width: 340px;
@@ -1989,6 +2007,15 @@ template {
   }
   .reviews-slider__item {
     max-width: 579px;
+  }
+  .reviews-slider__button {
+    top: 50%;
+  }
+  .reviews-slider__button_prev {
+    left: 0;
+  }
+  .reviews-slider__button_next {
+    right: 0;
   }
   .activities {
     padding-bottom: 70px;
@@ -2598,6 +2625,33 @@ template {
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 23px;
+  }
+  .activities-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .activities__card:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .activities__card:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .activities__card:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 29px;
+  }
+  .activities__card:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   .card {
     width: 100%;
