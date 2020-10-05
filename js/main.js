@@ -78,6 +78,15 @@ $(document).ready(function () {
   let closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  $(document).on('keydown', function (event) {
+    if (event.code == 'Escape') {
+      let modalOverlay = $(".modal__overlay");
+      let modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay_visible");
+      modalDialog.removeClass("modal__dialog_visible");
+      $('body').removeClass("scroll-hidden");
+    }
+  });
 
   function openModal() {
     let modalOverlay = $(".modal__overlay");
@@ -92,6 +101,6 @@ $(document).ready(function () {
     let modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
-    $('body').removeClass("scroll-hidden")
+    $('body').removeClass("scroll-hidden");
   }
 });
