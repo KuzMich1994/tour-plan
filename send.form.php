@@ -21,7 +21,10 @@ $body = "
   $title = "Подписка на рассылку Best Tour Plan";
 $body = "
 <h2>Новое письмо</h2>
-<b>Подписка оформлена</b>
+<b>Имя:</b> $name<br><br>
+<b>Телефон:</b>$phone<br><br>
+<b>Почта:</b> $email<br><br>
+<b>Сообщение:</b><br>$message
 ";
 }
 

@@ -23,6 +23,8 @@ img {
   border: none;
   border-radius: 4px;
   color: #ffffff;
+  outline: none;
+  cursor: pointer;
 }
 
 .scroll-hidden {
@@ -2143,7 +2145,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     padding-top: 78px;
   }
@@ -2192,6 +2194,7 @@ template {
     display: none;
   }
   .navbar__search_mobile_visible {
+    margin-left: 0;
     margin-bottom: 39px;
   }
   .navbar__user_mobile_hidden {
