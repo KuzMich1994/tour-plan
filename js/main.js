@@ -103,4 +103,26 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog_visible");
     $('body').removeClass("scroll-hidden");
   }
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least 2 characters long",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "We need your phone number to contact you",
+          minlength: "Your phone number must be in te format of 8-999-999-99-99"
+        },
+      }
+    });
+  })
+  $(document).ready(function () {
+    $('.phone').mask('0-(000)-000-00-00');
+  });
 });

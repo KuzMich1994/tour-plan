@@ -126,7 +126,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars hotel-info__stars">
-                <img src="img/Stars.svg" alt="Icon: Stars" class="hotel__stars">
+                <img
+                  src="img/Stars.svg"
+                  alt="Icon: Stars"
+                  class="hotel__stars"
+                />
               </div>
               <h1 class="hotel-info__name">Grand Hilton Hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -232,7 +236,9 @@
                   <span class="booking__numbers">12100</span>
                 </a>
               </div>
-              <button data-toggle="modal" class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <div class="map">
               <iframe
@@ -518,6 +524,7 @@
               class="subscribe__input"
               placeholder="Your email address"
               name="email"
+              required
             />
             <button value="submit" class="subscribe__button">Send</button>
           </form>
@@ -543,7 +550,7 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/Stars.svg" alt="Icon: Stars">
+                    <img src="img/Stars.svg" alt="Icon: Stars" />
                   </div>
                 </div>
                 <p class="reviews-slider__text">
@@ -634,8 +641,10 @@
               alt="The curious corner of chamarel"
               class="card__image"
             />
-            <h3 class="card__title">The curious corner <br>of chamarel</h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <h3 class="card__title">The curious corner <br />of chamarel</h3>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <div class="card activities__card">
             <img
@@ -644,7 +653,9 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <div class="card activities__card">
             <img
@@ -652,8 +663,12 @@
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
-            <h3 class="card__title">Tamarind falls hiking <br>trip - full day</h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <h3 class="card__title">
+              Tamarind falls hiking <br />trip - full day
+            </h3>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <div class="card activities__card">
             <img
@@ -662,7 +677,9 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
         </div>
       </div>
@@ -785,10 +802,15 @@
                     />
                   </div>
                   <p class="footer__contact-text">
-                    Tel (business hours) : <a href="tel:2691500" class="footer__link">269 1500</a> <br />
-                    Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 20:00
-                    pm) <br />
-                    Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)
+                    Tel (business hours) :
+                    <a href="tel:2691500" class="footer__link">269 1500</a>
+                    <br />
+                    Tel (hotline) Monday - Saturday:
+                    <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                    (08:00 am – 20:00 pm) <br />
+                    Tel (hotline) Sunday:
+                    <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                    (08:00 am – 14:00 pm)
                   </p>
                 </li>
                 <li class="footer__item footer__contact-item">
@@ -799,26 +821,38 @@
                       class="footer__icon"
                     />
                   </div>
-                  <a href="mailto:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
+                  <a
+                    href="mailto:cherly.lawson@example.com"
+                    class="footer__link"
+                    >cherly.lawson@example.com</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_form">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="footer__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="17"
+                />
+              </div>
               <textarea
                 class="footer__message"
                 placeholder="Message"
@@ -847,44 +881,51 @@
     </footer>
     <div class="modal">
       <div class="modal__overlay">
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: Close">
-        </a>
-        <h3 class="modal__title modal__title_form">Booking</h3>
-        <form action="send.form.php" method="POST" class="modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="modal__button-group">
-            <button class="button modal__button">Send</button>
-            <span class="modal__info">* Required Fields</span>
-          </div>
-        </form>
-      </div>
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="Icon: Close" />
+          </a>
+          <h3 class="modal__title modal__title_form">Booking</h3>
+          <form action="send.form.php" method="POST" class="modal__form form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="17"
+            />
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <div class="modal__button-group">
+              <button class="button modal__button">Send</button>
+              <span class="modal__info">* Required Fields</span>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

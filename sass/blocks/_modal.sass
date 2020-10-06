@@ -4,7 +4,7 @@
     top: 0
     left: 0
     right: 0
-    bottom: 0
+    bottom: -100px
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
     overflow-y: auto
@@ -20,7 +20,7 @@
     background-color: $dark
     color: $light
     z-index: 101
-    padding: 33px 88px
+    padding: 31px 88px
     width: 478px
     min-height: 487px
     border-radius: 8px
@@ -36,26 +36,35 @@
     text-transform: uppercase
     text-align: center
     margin-top: 0
-    margin-bottom: 14px
+    margin-bottom: 5px
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 14px
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
+    &::placeholder
+      color: $footer-text
+      font-weight: bold
+      font-size: 12px
   &__message
     width: 100%
-    margin-bottom: 12px
+    margin-top: 15px
     padding: 18px 23px
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
+    &::placeholder
+      color: $footer-text
+      font-weight: bold
+      font-size: 12px
   &__button
     min-width: 160px
     min-height: 50px
     padding: 18px
+    margin-top: 14px
     font-style: normal
     font-weight: bold
     font-size: 12px
@@ -72,6 +81,7 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+    margin-top: 15px
   &__close
     position: absolute
     top: 17px

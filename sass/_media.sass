@@ -132,8 +132,10 @@
     &__form
       justify-content: flex-start 
     &__input
-      flex-basis: 42%
-      margin-right: 36px
+      max-width: 100%
+      &-group
+        margin-right: 36px
+        flex-basis: 42%
     &__message
       flex-basis: 90%
     &__info
@@ -393,8 +395,11 @@
     &__form
       justify-content: space-between
     &__input
-      flex-basis: 100%
-      margin-right: 0
+      width: 100%
+      &-group
+        margin-right: 0
+        margin-top: 15px
+        flex-basis: 100%
     &__message
       flex-basis: 100%
     &__info
@@ -405,6 +410,8 @@
     &__title
       &_details
         width: 190px
+      &_form
+        margin-bottom: 0
   .modal
     &__dialog
       width: 350px
@@ -543,7 +550,7 @@
         margin-top: 10px
       &_form
         margin-top: 15px
-        margin-bottom: 16px
+        margin-bottom: 0
   .modal
     &__dialog
       width: 294px
@@ -560,10 +567,17 @@
     &__message
       font-size: 10px
       line-height: 15px
-@media ( max-height: 320px)
+@media ( max-height: 568px)
   .modal
     &__dialog
       position: relative
-      top: 85%
+      top: 50%
+      width: 450px
+      margin-bottom: 120px
+@media ( max-height: 500px)
+  .modal
+    &__dialog
+      position: relative
+      top: 75%
       width: 294px
-      margin-bottom: 20px
+      margin-bottom: 120px
