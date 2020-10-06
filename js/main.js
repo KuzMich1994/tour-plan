@@ -78,13 +78,13 @@ $(document).ready(function () {
   let closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
-  $(document).on('keydown', function (event) {
-    if (event.code == 'Escape') {
+  $(document).on("keydown", function (event) {
+    if (event.code == "Escape") {
       let modalOverlay = $(".modal__overlay");
       let modalDialog = $(".modal__dialog");
       modalOverlay.removeClass("modal__overlay_visible");
       modalDialog.removeClass("modal__dialog_visible");
-      $('body').removeClass("scroll-hidden");
+      $("body").removeClass("scroll-hidden");
     }
   });
 
@@ -93,7 +93,7 @@ $(document).ready(function () {
     let modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
-    $('body').addClass("scroll-hidden")
+    $("body").addClass("scroll-hidden");
   }
   function closeModal(event) {
     event.preventDefault();
@@ -101,9 +101,9 @@ $(document).ready(function () {
     let modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
-    $('body').removeClass("scroll-hidden");
+    $("body").removeClass("scroll-hidden");
   }
-  $(".form").each(function() {
+  $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -113,17 +113,32 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "We need your phone number to contact you",
-          minlength: "Your phone number must be in te format of 8-999-999-99-99"
+          required: "We need your phone number",
+          minlength:
+            "8-999-999-99-99",
         },
-      }
+      },
     });
-  })
-  $(document).ready(function () {
-    $('.phone').mask('0-(000)-000-00-00');
   });
-  AOS.init()
+  $(".subscribe").validate({
+    errorClass: "invalid__subscribe",
+    rules: {
+      email: {
+        required: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+  $(document).ready(function () {
+    $(".phone").mask("0-(000)-000-00-00");
+  });
+  AOS.init();
 });
