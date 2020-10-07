@@ -493,6 +493,38 @@ template {
   outline: none;
 }
 
+.search__input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.search__input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.search__input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.search__input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 .search__button {
   position: absolute;
   width: 65px;
@@ -2361,7 +2393,7 @@ template {
     background-size: 7px;
   }
   .hotel-right {
-    height: 450px;
+    height: 443px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2398,7 +2430,7 @@ template {
     margin-top: 5px;
   }
   .subscribe {
-    width: 100%;
+    width: 95%;
   }
   .reviews {
     padding-bottom: 50px;
@@ -2408,6 +2440,9 @@ template {
     line-height: 32px;
     margin-bottom: 42px;
     max-width: 300px;
+  }
+  .reviews-slider__text {
+    text-align: start;
   }
   .reviews-slider__item {
     max-width: 100%;
@@ -2420,13 +2455,13 @@ template {
     top: 46px;
   }
   .reviews-slider__button_prev {
-    left: 50%;
+    left: 48%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     margin-left: -85px;
   }
   .reviews-slider__button_next {
-    right: 50%;
+    right: 48%;
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
     margin-right: -85px;
@@ -2679,7 +2714,7 @@ template {
   }
   .booking {
     padding: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
   .booking__start {
     margin-top: 2px;
@@ -2691,7 +2726,8 @@ template {
     margin-top: 7px;
   }
   .map {
-    margin-bottom: 2px;
+    height: 173px;
+    margin-bottom: 41px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -2713,7 +2749,8 @@ template {
     max-width: 245px;
   }
   .activities {
-    padding-top: 40px;
+    padding-top: 23px;
+    padding-bottom: 40px;
   }
   .activities__title {
     margin-bottom: 36px;
