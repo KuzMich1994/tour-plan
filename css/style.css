@@ -1032,18 +1032,21 @@ template {
 .packages-card__bottom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 120px;
-      grid-template-columns: 1fr 120px;
-  -ms-grid-rows: 1fr 40px 30px;
-      grid-template-rows: 1fr 40px 30px;
+  -ms-grid-columns: 1fr minmax(120px, max-content);
+      grid-template-columns: 1fr minmax(120px, -webkit-max-content);
+      grid-template-columns: 1fr minmax(120px, max-content);
+  -ms-grid-rows: 1fr minmax(40px, max-content) 30px;
+      grid-template-rows: 1fr minmax(40px, -webkit-max-content) 30px;
+      grid-template-rows: 1fr minmax(40px, max-content) 30px;
 }
 
 .packages-card__bottom_small {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  -ms-grid-rows: 1fr 40px 25px;
-      grid-template-rows: 1fr 40px 25px;
+  -ms-grid-rows: 1fr minmax(40px, max-content) 25px;
+      grid-template-rows: 1fr minmax(40px, -webkit-max-content) 25px;
+      grid-template-rows: 1fr minmax(40px, max-content) 25px;
 }
 
 .packages-card__button {
@@ -1053,6 +1056,7 @@ template {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+  padding: 10px 10px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1091,6 +1095,7 @@ template {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-top: 16px;
 }
 
 .packages-room_small {
