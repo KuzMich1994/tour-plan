@@ -34,7 +34,7 @@ $(document).ready(function () {
     autoHeight: true,
   });
 
-  let menuButton = document.querySelector(".menu-button")
+  let menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
     document
       .querySelector(".navbar-bottom")
