@@ -159,4 +159,10 @@ $(document).ready(function () {
     $(".phone").mask("0-(000)-000-00-00");
   });
   AOS.init();
+
+  // let googleMap = document.querySelector('.map');
+  // googleMap.addEventListener('click', function () {
+  //   googleMap.setAttribute('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.985308353734!2d27.138586467443883!3d38.42761666885461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8f7133f502d%3A0xa7fbb63df26fc9b0!2sDoubleTree%20by%20Hilton%20Hotel%20Izmir%20-%20Alsancak!5e0!3m2!1sru!2sru!4v1600795476286!5m2!1sru!2sru')
+  // })
+  
 });
