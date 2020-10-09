@@ -224,16 +224,43 @@
             </ul>
           </div>
         </div>
-        <div class="footer__contact-form">
-          <h3 class="footer__title footer__title_form">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="footer__input" placeholder="Your Full Name*" name="name" />
-            <input type="text" class="footer__input" placeholder="Phone Number*" name="phone" />
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
-            <button class="button footer__button">Send</button>
-            <span class="footer__info">* Required Fields</span>
-          </form>
-        </div>
+        <div
+            class="footer__contact-form"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <h3 class="footer__title footer__title_form">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="footer__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="17"
+                />
+              </div>
+              <textarea
+                class="footer__message"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+              <button class="button footer__button">Send</button>
+              <span class="footer__info">* Required Fields</span>
+            </form>
+          </div>
       </div>
       <nav class="footer__nav">
         <ul class="footer__ul footer__ul_nav">
@@ -254,7 +281,7 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
