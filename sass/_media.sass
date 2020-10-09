@@ -28,14 +28,27 @@
       &__link
         font-size: 12px
         line-height: 15px
+        &_hover
+          position: static
+  .search
+    &__button
+      &:hover
+        background-color: $primary
   .user
     &__name
       margin-top: 5px
+      &:hover
+        text-decoration: none
   .logo
     width: 132px
   .search
     &__input
       width: 340px
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          text-decoration: none
   .hotel
     &-grid
       flex-direction: column
@@ -61,6 +74,10 @@
     padding: 92px 0 93px 0
     &-wrapper
       max-width: 700px
+  .subscribe
+    &__button
+      &:hover
+        background-color: $primary
   .reviews
     padding-top: 30px
     padding-bottom: 60px
@@ -151,6 +168,13 @@
         margin-bottom: 25px
       &_form
         margin-bottom: 35px
+    &__link
+      &:hover
+        text-decoration: none
+    &__icon
+      &-link
+        &:hover
+          transform: scale(0)
   .modal
     &__dialog
       padding: 33px 60px
@@ -170,6 +194,15 @@
       left: 0
     &#phone-error
       left: 288px
+  .button
+    transition-property: none
+    &:hover
+      background-color: $primary
+      border: none
+      border-radius: 4px
+      color: $light
+      outline: none
+      cursor: pointer
 @media (max-width: 767px)
   body
     padding-top: 78px

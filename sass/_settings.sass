@@ -16,6 +16,11 @@ img
   color: $light
   outline: none
   cursor: pointer
+  transition: all 700ms ease
+  &:hover
+    background-color: #D8D8D8
+    color: $primary
+    box-shadow: inset 0 0 0 2px $primary
 .scroll
   &-hidden
     overflow-y: hidden
@@ -69,4 +74,5 @@ label.invalid
   &#phone-error
     position: absolute
     top: 39px
-    left: 303px 
+    left: 303px
+  
